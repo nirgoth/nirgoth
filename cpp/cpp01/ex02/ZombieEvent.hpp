@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ZombieEvent.hpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rbeach <rbeach@student.21-school.ru>       +#+  +:+       +#+        */
+/*   By: whortenc <whortenc@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/02/07 13:33:38 by rbeach            #+#    #+#             */
-/*   Updated: 2021/02/13 15:11:11 by rbeach           ###   ########.fr       */
+/*   Created: 2021/04/21 14:18:59 by whortenc          #+#    #+#             */
+/*   Updated: 2021/04/21 14:19:00 by whortenc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

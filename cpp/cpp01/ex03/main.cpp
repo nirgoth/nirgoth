@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rbeach <rbeach@student.21-school.ru>       +#+  +:+       +#+        */
+/*   By: whortenc <whortenc@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/02/06 18:06:15 by rbeach            #+#    #+#             */
-/*   Updated: 2021/02/13 15:55:46 by rbeach           ###   ########.fr       */
+/*   Created: 2021/04/21 14:20:46 by whortenc          #+#    #+#             */
+/*   Updated: 2021/04/21 14:33:44 by whortenc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,29 +14,24 @@
 
 int main(void)
 {
-	int			num;
+	int			number;
 	ZombieHorde	*zombie;
 
 	srand(time(0));
 
-	num = -5;
-	std::cout << "Zombiehord with " << num << " zombies" << std::endl;
-	zombie = new ZombieHorde(num);
+	number = 0;
+	std::cout << "Horde with " << number << " zombies" << std::endl;
+	zombie = new ZombieHorde(number);
 	delete zombie;
 
-	num = 0;
-	std::cout << "Zombiehord with " << num << " zombies" << std::endl;
-	zombie = new ZombieHorde(num);
+	number = 1;
+	std::cout << "Horde with " << number << " zomby" << std::endl;
+	zombie = new ZombieHorde(number);
 	delete zombie;
 
-	num = 5;
-	std::cout << "Zombiehord with " << num << " zombies" << std::endl;
-	zombie = new ZombieHorde(num);
-	delete zombie;
-
-	num = 20;
-	std::cout << "Zombiehord with " << num << " zombies" << std::endl;
-	zombie = new ZombieHorde(num);
+	number = 7;
+	std::cout << "Horde with " << number << " zombies" << std::endl;
+	zombie = new ZombieHorde(number);
 	delete zombie;
 
 	return(1);

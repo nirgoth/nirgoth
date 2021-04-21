@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Zombie.cpp                                           :+:      :+:    :+:   */
+/*   Zombie.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rbeach <rbeach@student.21-school.ru>       +#+  +:+       +#+        */
+/*   By: whortenc <whortenc@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/02/07 13:36:45 by rbeach            #+#    #+#             */
-/*   Updated: 2021/02/12 10:39:11 by rbeach           ###   ########.fr       */
+/*   Created: 2021/04/21 14:20:55 by whortenc          #+#    #+#             */
+/*   Updated: 2021/04/21 14:20:56 by whortenc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ Zombie::Zombie(void) {}
 
 Zombie::~Zombie(void) 
 {
-	std::cout << "<" << this->_name << " (" << this->_type << ")> died" << std::endl;
+	std::cout << "<" << this->_name << " (" << this->_type << ")> died cause of abscence of food" << std::endl;
 }
 
 void Zombie::announce(void)

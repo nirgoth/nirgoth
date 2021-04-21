@@ -3,18 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   Zombie.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rbeach <rbeach@student.21-school.ru>       +#+  +:+       +#+        */
+/*   By: whortenc <whortenc@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/02/07 13:33:38 by rbeach            #+#    #+#             */
-/*   Updated: 2021/02/12 13:21:32 by rbeach           ###   ########.fr       */
+/*   Created: 2021/04/21 14:18:47 by whortenc          #+#    #+#             */
+/*   Updated: 2021/04/21 14:18:48 by whortenc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef ZOMBIE_H
 # define ZOMBIE_H
-
 # include <iostream>
-
 
 class	Zombie 
 {

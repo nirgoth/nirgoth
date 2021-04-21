@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: whortenc <whortenc@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/02/06 18:06:15 by rbeach            #+#    #+#             */
-/*   Updated: 2021/04/19 18:08:18 by whortenc         ###   ########.fr       */
+/*   Created: 2021/04/21 14:18:33 by whortenc          #+#    #+#             */
+/*   Updated: 2021/04/21 14:18:35 by whortenc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,13 +15,12 @@
 Zombie *randomChump(ZombieEvent& party)
 {
 	Zombie				*newZombie;
-	std::stringstream	ss;
-
-	for (int i = 0; i < 10; i++)
-	{
-		ss << (char)(std::rand() % 26 + 65);
-	}
-	newZombie = party.newZombie(ss.str());
+	std::stringstream	string;
+	const int i = rand() % 10;
+	const char * Names[10] = { "Bob", "Joe", "Manson", "Karl", "Donald", \
+	"Ivan", "Charlie", "Hebdo", "Spok", "Joda"};
+	string << Names[i];
+	newZombie = party.newZombie(string.str());
 	newZombie->announce();
 	return newZombie;
 }
@@ -36,15 +35,15 @@ int main(void)
 	zombieEl = randomChump(party);
 	delete zombieEl;
 	
-	party.setZombieType("brainEater");
+	party.setZombieType("walking dead zombie");
 	zombieEl = randomChump(party);
 	delete zombieEl;
 	
-	party.setZombieType("heartEater");
+	party.setZombieType("zombieland zombie");
 	zombieEl = randomChump(party);
 	delete zombieEl;
 	
-	party.setZombieType("armEater");
+	party.setZombieType("world war z zombie");
 	zombieEl = randomChump(party);
 	delete zombieEl;
 	

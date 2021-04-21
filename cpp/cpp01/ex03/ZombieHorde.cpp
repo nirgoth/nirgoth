@@ -3,26 +3,27 @@
 /*                                                        :::      ::::::::   */
 /*   ZombieHorde.cpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rbeach <rbeach@student.21-school.ru>       +#+  +:+       +#+        */
+/*   By: whortenc <whortenc@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/02/13 14:28:19 by rbeach            #+#    #+#             */
-/*   Updated: 2021/02/13 15:52:53 by rbeach           ###   ########.fr       */
+/*   Created: 2021/04/21 14:20:35 by whortenc          #+#    #+#             */
+/*   Updated: 2021/04/21 14:33:07 by whortenc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ZombieHorde.hpp"
 
-ZombieHorde::ZombieHorde(int N)
+ZombieHorde::ZombieHorde(int Number)
 {
-	if (N < 1)
+	if (Number < 1)
 	{
-		std::cout << "Wrong int" << std::endl;
+		std::cout << "\033[31m" << "Invalid number of zombies, it should be strictly greater the Zero" << "\033[0m" << std::endl;
 		return;
 	}
-	Zombie *zombies = new Zombie[N];
-	for (int i = 0; i < N; i++)
+	int i = 0;
+	Zombie *zombies = new Zombie[Number];
+	while (i++ < Number)
 	{
-		zombies[i].setNameType(this->zombieName(), "brainEater");
+		zombies[i].setNameType(this->zombieName(), "walking dead zombie");
 		zombies[i].announce();
 	}
 	this->_zombies = zombies;
@@ -32,16 +33,18 @@ ZombieHorde::~ZombieHorde(void)
 {
 	if (!this->_zombies)
 		return;
-	std::cout << "Start of ZombieHorde destroing" << std::endl;
+	std::cout << "Horde battle royle - every zombie will die" << std::endl;
 	delete [] this->_zombies;
-	std::cout << "Finish of ZombieHorde destroing" << std::endl;
+	std::cout << "there is no living dead anymore" << std::endl;
 }
 
 std::string ZombieHorde::zombieName(void)
 {
-	std::stringstream ss;
-
-	for (int i = 0; i < 4; i++)
-		ss << (char)(std::rand() % 26 + 65);
-	return (ss.str());
+	Zombie				*newZombie;
+	std::stringstream	string;
+	const int i = rand() % 10;
+	const char * Names[10] = { "Bob", "Joe", "Manson", "Karl", "Donald", \
+	"Ivan", "Charlie", "Hebdo", "Spok", "Joda"};
+	string << Names[i];
+	return (string.str());
 }

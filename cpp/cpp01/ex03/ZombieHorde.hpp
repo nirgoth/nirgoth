@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ZombieHorde.hpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rbeach <rbeach@student.21-school.ru>       +#+  +:+       +#+        */
+/*   By: whortenc <whortenc@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/02/13 14:24:49 by rbeach            #+#    #+#             */
-/*   Updated: 2021/02/13 15:43:18 by rbeach           ###   ########.fr       */
+/*   Created: 2021/04/21 14:21:04 by whortenc          #+#    #+#             */
+/*   Updated: 2021/04/21 14:21:05 by whortenc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

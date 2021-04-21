@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ex04.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rbeach <rbeach@student.21-school.ru>       +#+  +:+       +#+        */
+/*   By: whortenc <whortenc@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/02/13 15:57:23 by rbeach            #+#    #+#             */
-/*   Updated: 2021/02/13 16:04:57 by rbeach           ###   ########.fr       */
+/*   Created: 2021/04/21 14:35:35 by whortenc          #+#    #+#             */
+/*   Updated: 2021/04/21 14:40:54 by whortenc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,13 @@
 
 int main(void)
 {
-	std::string str = "HI THIS IS BRAIN";
-	std::string *strPtr = &str;
-	std::string &strRef = str;
-
-	std::cout << "Pointer: " << *strPtr << std::endl;
-	std::cout << "Reference: " << strRef << std::endl;
+	std::string str;
+	str = "HI THIS IS BRAIN";
+	std::string &strReference = str;
+	std::string *strPointer = &str;
+	
+	std::cout << "Print " << "\033[33m" << "reference " << "\033[0m" << "string: " << "\033[31m" << strReference << "\033[0m" << std::endl;
+	std::cout << "Print " << "\033[33m" << "pointer " << "\033[0m" << "string: " << "\033[31m" << *strPointer << "\033[0m" << std::endl;
+	
 	return (0);
 }
