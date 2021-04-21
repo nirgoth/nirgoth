@@ -6,13 +6,15 @@
 /*   By: whortenc <whortenc@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/21 14:20:55 by whortenc          #+#    #+#             */
-/*   Updated: 2021/04/21 14:20:56 by whortenc         ###   ########.fr       */
+/*   Updated: 2021/04/21 16:20:32 by whortenc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
 
-Zombie::Zombie(void) {}
+Zombie::Zombie(void) 
+{
+}
 
 Zombie::~Zombie(void) 
 {

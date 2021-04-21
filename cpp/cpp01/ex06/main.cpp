@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rbeach <rbeach@student.21-school.ru>       +#+  +:+       +#+        */
+/*   By: whortenc <whortenc@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/02/16 09:01:52 by rbeach            #+#    #+#             */
-/*   Updated: 2021/02/16 09:30:36 by rbeach           ###   ########.fr       */
+/*   Created: 2021/04/21 15:39:22 by whortenc          #+#    #+#             */
+/*   Updated: 2021/04/21 16:15:08 by whortenc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Weapon.hpp"
 #include "HumanA.hpp"
 #include "HumanB.hpp"
+#include "Weapon.hpp"
 
 int main(void)
 {

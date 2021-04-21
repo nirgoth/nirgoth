@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Zombie.cpp                                           :+:      :+:    :+:   */
+/*   HumanA.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rbeach <rbeach@student.21-school.ru>       +#+  +:+       +#+        */
+/*   By: whortenc <whortenc@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/02/07 13:36:45 by rbeach            #+#    #+#             */
-/*   Updated: 2021/02/12 10:39:11 by rbeach           ###   ########.fr       */
+/*   Created: 2021/04/21 15:38:59 by whortenc          #+#    #+#             */
+/*   Updated: 2021/04/21 16:19:42 by whortenc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,9 @@
 
 HumanA::HumanA(std::string name, Weapon& weapon):_name(name), _weapon(weapon) {}
 
-HumanA::~HumanA(void) {}
+HumanA::~HumanA(void)
+{
+}
 
 void HumanA::attack()
 {

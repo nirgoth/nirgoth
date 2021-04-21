@@ -3,14 +3,14 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: rbeach <rbeach@student.21-school.ru>       +#+  +:+       +#+         #
+#    By: whortenc <whortenc@student.21-school.ru    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2020/02/10 14:22:17 by rbeach            #+#    #+#              #
-#    Updated: 2021/02/16 18:10:33 by rbeach           ###   ########.fr        #
+#    Created: 2021/04/21 16:37:52 by whortenc          #+#    #+#              #
+#    Updated: 2021/04/21 16:37:53 by whortenc         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = sedForMasters
+NAME = replace
 
 CC = clang++
 
