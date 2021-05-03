@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ClapTrap.cpp                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: whortenc <whortenc@student.21-school.ru    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/04/25 20:12:06 by whortenc          #+#    #+#             */
+/*   Updated: 2021/04/25 20:14:38 by whortenc         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "ClapTrap.hpp"
 
 ClapTrap::ClapTrap(int hit_points, int max_hit_points, int energy_point, int max_energy_point, int level, std::string name, int mel_dmg, int ran_dmg, int armor):

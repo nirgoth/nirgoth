@@ -1,40 +1,50 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   FragTrap.cpp                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: whortenc <whortenc@student.21-school.ru    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/04/25 20:10:50 by whortenc          #+#    #+#             */
+/*   Updated: 2021/04/25 20:46:40 by whortenc         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "FragTrap.hpp"
 
-FragTrap::FragTrap(std::string name):
-	_hit_points(100),
-	_max_hit_points(100),
-	_energy_point(100),
-	_max_energy_point(100),
-	_level(1),
-	_name(name),
-	_mel_dmg(30),
-	_ran_dmg(20),
-	_armor(5)
+FragTrap::FragTrap(void)
 {
-	srand(time(NULL));
-	std::cout << "FRAG <" << this->_name << "> created" << std::endl;
+	this->_hit_points = 100;
+	this->_max_hit_points = 100;
+	this->_energy_point = 100;
+	this->_max_energy_point = 100;
+	this->_level = 1;
+	this->_name = "";
+	this->_mel_dmg = 30;
+	this->_ran_dmg = 20;
+	this->_armor = 5;
+	std::cout << "noname FRAG was created" << std::endl;
 	return; 
 }
 
-FragTrap::FragTrap(void):
-	_hit_points(100),
-	_max_hit_points(100),
-	_energy_point(100),
-	_max_energy_point(100),
-	_level(1),
-	_name(""),
-	_mel_dmg(30),
-	_ran_dmg(20),
-	_armor(5)
+FragTrap::FragTrap(std::string name)
 {
-	srand(time(NULL));
-	std::cout << "FRAG without name created" << std::endl;
+	this->_hit_points = 100;
+	this->_max_hit_points = 100;
+	this->_energy_point = 100;
+	this->_max_energy_point = 100;
+	this->_level = 1;
+	this->_name = name;
+	this->_mel_dmg = 30;
+	this->_ran_dmg = 20;
+	this->_armor = 5;
+	std::cout << "FRAG <" << this->_name << "> created" << std::endl;
 	return; 
 }
 
 FragTrap::~FragTrap(void)
 {
-	std::cout << "FRAG <" << this->_name << "> died" << std::endl;
+	std::cout << "FRAG <" << this->_name << "> has gone" << std::endl;
 	return;
 }
 
@@ -71,7 +81,7 @@ void FragTrap::rangedAttack(std::string const &target){
 }
 
 void FragTrap::meleeAttack(std::string const &target){
-	std::cout << "FRAG <" << this->_name << "> attacks <" << target << "> melee, causing <" << this->_mel_dmg << "> points of damage!" << std::endl;
+	std::cout << "FRAG <" << this->_name << "> melee attacks <" << target << "> causing <" << this->_mel_dmg << "> points of damage!" << std::endl;
 }
 
 int FragTrap::takeDamage(unsigned int amount){
@@ -130,6 +140,7 @@ void FragTrap::vaulthunter_dot_exe(std::string const &target)
 	setWpn(wpn[2], "Apple", 15);
 	setWpn(wpn[3], "Ponycorn", 20);
 	setWpn(wpn[4], "Atomic bomb", 1000);
+	
 	choice = rand() % 5;
 	std::cout << "FRAG <" << this->_name << "> attacks <" << target << "> with " << wpn[choice].weapon << ", causing <" << wpn[choice].dmg << "> points of damage!" << std::endl;
 	this->_energy_point -= 25;
